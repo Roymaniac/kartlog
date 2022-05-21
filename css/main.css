@@ -1109,8 +1109,18 @@ html{
     margin-top: 2.75rem;
   }
 
+  .sm\:mb-5{
+    margin-bottom: 1.25rem;
+  }
+
   .sm\:items-center{
     align-items: center;
+  }
+
+  .sm\:space-y-9 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-y-reverse: 0;
+    margin-top: calc(2.25rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(2.25rem * var(--tw-space-y-reverse));
   }
 
   .sm\:p-6{
@@ -1220,5 +1230,14 @@ html{
 
   .lg\:p-11{
     padding: 2.75rem;
+  }
+
+  .lg\:p-8{
+    padding: 2rem;
+  }
+
+  .lg\:px-8{
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }

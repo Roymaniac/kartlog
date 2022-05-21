@@ -1240,4 +1240,8 @@ html{
     padding-left: 2rem;
     padding-right: 2rem;
   }
+
+  .lg\:pr-4{
+    padding-right: 1rem;
+  }
 }

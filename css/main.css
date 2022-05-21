@@ -1244,4 +1244,8 @@ html{
   .lg\:pr-4{
     padding-right: 1rem;
   }
+
+  .lg\:pr-6{
+    padding-right: 1.5rem;
+  }
 }

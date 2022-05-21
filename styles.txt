@@ -1,0 +1,81 @@
+bluish background: #0777A2;
+text background: #000000B2;
+grayish rgba(0, 0, 0, 0.7);
+
+cardHeaderText background: #170F49;
+cardBodyText background: #6F6C90;
+testimonial background: #EAEAEA;
+cardFullBg background: #FFFFFF;
+
+
+footerBG background: #212121;
+
+font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 45px;
+letter-spacing: 0em;
+text-align: left;
+font-family: Poppins;
+font-size: 40px;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: left;
+
+font-family: Poppins;
+font-size: 40px;
+font-weight: 900;
+line-height: 60px;
+letter-spacing: 0em;
+text-align: left;
+
+CARD
+//styleName: Headings/Typography Size 4;
+font-family: DM Sans;
+font-size: 22px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+
+//styleName: Paragraph/Default;
+font-family: DM Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+
+//styleName: Text Single/200/Bold;
+font-family: DM Sans;
+font-size: 18px;
+font-weight: 700;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+
+//styleName: Text Single/200/Regular;
+font-family: DM Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0px;
+text-align: left;
+
+FOOTER
+font-family: Roboto;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+
+font-family: Poppins;
+font-size: 22px;
+font-weight: 700;
+line-height: 33px;
+letter-spacing: 0em;
+text-align: left;
+
+

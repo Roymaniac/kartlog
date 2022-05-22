@@ -353,39 +353,84 @@
         <!-- Footer -->
 
         <!-- Flex Container -->
-        <footer class="footer p-5 bg-lightGray text-lightAsh">
-            <div>
-                <span class="footer-title">Services</span>
-                <a class="hover:text-darkBlue">Branding</a>
-                <a class="link link-hover">Design</a>
-                <a class="link link-hover">Marketing</a>
-                <a class="link link-hover">Advertisement</a>
+        <footer class="footer p-10 bg-darkBlack text-lightAsh">
+            <div class="space-y-4">
+                <img src="img/bottom-logo.svg" alt="logo" />
+                <h5 class="text-gray-300 py-4">
+                    877, Herbert Macaulay Way, <br />Victoria island, Lagos
+                </h5>
+
+                <span class="flex">
+                    <img src="img/phone.svg" alt="" />
+                    <p class="text-gray-300 px-4">+234 706 66667</p>
+                </span>
+
+                <span class="flex">
+                    <img src="img/mail.svg" alt="" />
+                    <p class="text-gray-300 px-4">mail@kartlog.ng</p>
+                </span>
+
+                <div class="flex pt-5 w-35 space-x-5">
+                    <a href=""
+                        ><img
+                            src="img/facebook.svg"
+                            alt="fb-logo"
+                            class="hover:bg--lightBlue"
+                    /></a>
+                    <a href=""
+                        ><img
+                            src="img/instagram.svg"
+                            alt="ig-logo"
+                            class="hover:bg-lightBlue"
+                    /></a>
+                    <a href=""
+                        ><img
+                            src="img/twitter.svg"
+                            alt="twitter-logo"
+                            class="hover:bg-lightBlue mt-1"
+                    /></a>
+                </div>
             </div>
 
-            <div>
-                <span class="footer-title">Legal</span>
-                <a class="link link-hover">Terms of use</a>
-                <a class="link link-hover">Privacy policy</a>
-                <a class="link link-hover">Cookie policy</a>
+            <div class="space-y-2">
+                <span class="footer-title sm:mt-5 text-gray-400 font-heading"
+                    >Quick links</span
+                >
+                <a class="text-gray-300 hover:text-lightBlue">Home</a>
+                <a class="text-gray-300 hover:text-lightBlue">Features</a>
+                <a class="text-gray-300 hover:text-lightBlue">About</a>
+                <a class="text-gray-300 hover:text-lightBlue">Investment</a>
+                <a class="text-gray-300 hover:text-lightBlue">Talents</a>
+                <a class="text-gray-300 hover:text-lightBlue">Review</a>
+                <a class="text-gray-300 hover:text-lightBlue">Contact</a>
             </div>
-            <div>
-                <span class="footer-title">Newsletter</span>
+            <div class="space-y-2">
+                <span class="footer-title sm:mt-5 text-gray-400 font-heading"
+                    >Newsletter</span
+                >
                 <div class="form-control w-80">
                     <label class="label mb-5">
-                        <span class="label-text">Enter your email address</span>
+                        <span class="label-text"
+                            >Subscribe to our Newsletter</span
+                        >
                     </label>
                     <div class="relative">
                         <input
                             type="text"
-                            placeholder="username@site.com"
-                            class="input rounded-full w-full pr-16"
+                            placeholder="example@mail.com"
+                            class="input rounded-md w-full pr-16 text-black outline-none"
                         />
                         <button
-                            class="btn bg-lightBlue absolute top-0 right-0 rounded-full"
+                            class="btn bg-lightBlue absolute top-0 right-0 rounded-md hover:bg-blue-600"
                         >
                             Subscribe
                         </button>
                     </div>
+                </div>
+
+                <div class="hidden lg:flex pt-5">
+                    <img src="img/google.svg" width="" alt="google-badge" />
+                    <img src="img/apple.svg" width="38%" alt="apple-badge" />
                 </div>
             </div>
         </footer>

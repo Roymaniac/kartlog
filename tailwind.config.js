@@ -14,6 +14,8 @@ module.exports = {
         lightAsh: "#EAEAEA",
         countPink: "#FF7990",
         darkBlue: "#170F49",
+        darkBlack: '#212121'
+
       },
       fontFamily: {
         heading: ["Poppins", "sans-serif"],

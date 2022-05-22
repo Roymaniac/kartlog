@@ -79,3 +79,6 @@ letter-spacing: 0em;
 text-align: left;
 
 
+
+md:mt-1 md:left-11 md:ml-60 == button
+md:h-10 md:w-96 == input

@@ -1,286 +1,395 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/main.css" />
-    <title>KartlogNG - Website</title>
-  </head>
-  <body>
-    <!-- NavBar -->
-    <nav class="mx-auto navbar-center pt-2 pb-2 border-2 shadow-lg">
-      <!-- Flex container -->
-      <div class="flex items-center justify-between">
-        <!-- Brand logo -->
-        <div class="ml-9 pt-2">
-          <img src="img/Logo.svg" alt="logo" />
-        </div>
-        <!-- Menu items -->
-        <div class="hidden md:flex space-x-11 pt-4 font-medium">
-          <a href="#" class="hover:text-blue-500">Home</a>
-          <a href="#hero" class="hover:text-blue-500">Features</a>
-          <a href="#features" class="hover:text-blue-500">About</a>
-        </div>
-        <div class="hidden md:flex pt-2 mr-5">
-          <img src="img/google.svg" width="" alt="google-badge" />
-          <img src="img/apple.svg" width="38%" alt="apple-badge" />
-        </div>
-      </div>
-    </nav>
-    
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="description" content="Kartlog" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            content="Kartlog connects you to the best fashion designers in your neighborhood"
+            property="og:title"
+        />
+        <meta property="og:type" content="website" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/main.css" />
+        <title>Kartlog - Website</title>
+        <link href="images/logo.svg" rel="shortcut icon" type="image/x-icon" />
+        <link href="img/logo.svg" rel="apple-touch-icon" />
+        <link rel="shortcut icon" href="img/logo.svg" type="image/x-icon" />
+    </head>
+    <body>
+        <!-- NavBar -->
+        <nav class="mx-auto navbar-center pt-2 pb-2 border-2 shadow-lg">
+            <!-- Flex container -->
+            <div class="flex items-center justify-between">
+                <!-- Brand logo -->
+                <div class="ml-9 pt-2">
+                    <img src="img/Logo.svg" alt="logo" />
+                </div>
+                <!-- Menu items -->
+                <div class="hidden md:flex space-x-11 pt-4 font-medium">
+                    <a href="#" class="hover:text-blue-500">Home</a>
+                    <a href="#hero" class="hover:text-blue-500">Features</a>
+                    <a href="#features" class="hover:text-blue-500">About</a>
+                </div>
+                <div class="hidden md:flex pt-2 mr-5">
+                    <img src="img/google.svg" width="" alt="google-badge" />
+                    <img src="img/apple.svg" width="38%" alt="apple-badge" />
+                </div>
+            </div>
+        </nav>
 
-    <!-- Countdown Section -->
-    <section id="count">
-      <div
-        class="flex flex-col p-5 md:flex-row items-center text-lightGray  justify-between lg:ml-5 mt-10 space-y-0 md:space-y-0"
-      >
-      <div class="flex flex-col mb-6 space-y-6 md:w-1/2">
-        <p class=" font-heading text-center md:text-left sm:text-xl sm:text-center">- Coming soon</p>
-        <h3 class="font-heading text-center md:text-4xl md:text-left sm:text-5xl sm:text-center">Get Notified <br>
-          When we launch</h3>
-
-          <span>
-            <input type="text" placeholder="Enter your email address" class="h-12 w-72 sm:mb-1 input outline-none border border-lightBlue px-5 rounded-full"/>
-            <button type="submit" class="h-8 w-32 btn bg-lightBlue text-lightAsh rounded-full px-6 hover:bg-blue-500 sm:items-center sm:w-21">Notify me</button>
-          </span>
-
-          <p class="font-sans text-center md:text-left md:text-sm sm:text-xl sm:text-center"> Don’t worry we will not spam you</p>
-      </div>
-      <div class="md:w-1/2 lg:pr-6">
-        <div class="grid grid-flow-col gap-6 text-center auto-cols-max">
-          <div class="flex flex-col lg:px-5 md:p-4 bg-countPink rounded-box text-neutral-content sm:p-6 ">
-            <span class="font-heading md:text-md text-4xl">
-              <span id="days"></span>
-            </span>
-            days
-          </div> 
-          <div class="flex flex-col lg:px-5 md:p-4 bg-countPink rounded-box text-neutral-content sm:p-6 ">
-            <span class="font-heading md:text-md text-4xl">
-              <span id="hours"></span>
-            </span>
-            hours
-          </div> 
-          <div class="flex flex-col lg:px-5 md:p-4 bg-countPink rounded-box text-neutral-content sm:p-6 ">
-            <span class="font-heading md:text-md text-4xl">
-              <span id="min"></span>
-            </span>
-            min
-          </div> 
-          <div class="flex flex-col lg:px-5  md:p-4 bg-countPink rounded-box text-neutral-content sm:p-6 ">
-            <span class="font-heading md:text-md text-4xl">
-              <span id="secs"></span>
-            </span>
-            sec
-          </div>
-        </div>
-      </div>
-    </div>
-
-    </section>
-
-    <!-- Hero Section -->
-    <section id="hero">
-      <!-- Flex container -->
-      <div
-        class="flex flex-col-reverse p-5 md:flex-row items-center justify-between lg:ml-5 mt-10 space-y-0 md:space-y-0"
-      >
-        <!-- Left Item -->
-        <div class="flex-col mb-22 space-y-6 md:w-1/2">
-          <h1
-            class="max-w-xl text-4xl font-heading text-lightGray font-bold text-center md:text-5xl md:text-left"
-          >
-            Everyday more people are trusting
-            <span class="text-lightBlue">Kartlog</span> for a smooth bespoke
-            clothing experience
-          </h1>
-
-          <div class="flex items-center space-x-2">
-            <img src="img/arrow.svg" alt="" class="" />
-            <p
-              class="max-w-xl text-center sm:mt-5 text-lightGray md:text-left sm:text-left"
-            >
-              Kartlog connects to the best fashion designers in your
-              neighborhood, you can now make orders for perfect fitted dresses
-              with your measurement
-            </p>
-          </div>
-
-          <div class="flex items-center space-x-2">
-            <img src="img/arrow.svg" alt="" />
-            <p
-              class="max-w-xl text-center sm:mt-5 text-lightGray md:text-left sm:text-left"
-            >
-              Kartlog has thousands of design styles to suit your every event,
-              traditional, casual and cooperates posted by verified fashion
-              designers
-            </p>
-          </div>
-
-          <div class="flex items-center space-x-2">
-            <img src="img/arrow.svg" alt="" />
-            <p
-              class="max-w-xl text-center md:pt-0 text-lightGray md:text-left sm:text-left"
-            >
-              Kartlog offers affordable material pickup and delivery across
-              Africa
-            </p>
-          </div>
-        </div>
-        <!-- Right item -->
-        <div class="md:w-1/2">
-          <img src="img/header-2.svg" alt="header-image" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Features Section -->
-    <section id="features">
-      <!-- Flex container -->
-      <div
-        class="flex flex-col-reverse p-5 md:flex-row items-center justify-between lg:ml-5 lg:mr-5 mt-10 space-y-0 md:space-y-0"
-      >
-        <!-- Left item -->
-        <div class="flex flex-col mb-22 space-y-6 md:w-1/2">
-          <h1
-            class="max-w-xl text-4xl font-san text-lightGray font-bold text-center md:text-5xl md:text-left"
-          >
-            Fashion designers all over Africa are taking A quantum leap with
-            <span class="text-lightBlue">Kartlog</span>
-          </h1>
-
-          <div class="flex items-center space-x-2">
-            <img src="img/arrow.svg" alt="" />
-            <p
-              class="max-w-xl text-center sm:mt-5 text-lightGray md:text-left sm:text-left"
-            >
-              Kartlog connects to the best fashion designers in your
-              neighborhood, you can now make orders for perfect fitted dresses
-              with your measurement
-            </p>
-          </div>
-
-          <div class="flex items-center space-x-2">
-            <img src="img/arrow.svg" alt="" />
-            <p
-              class="max-w-xl text-center sm:mt-5 text-lightGray md:text-left sm:text-left"
-            >
-              Kartlog has thousands of design styles to suit your every event,
-              traditional, casual and cooperates posted by verified fashion
-              designers
-            </p>
-          </div>
-
-          <div class="flex items-center space-x-2">
-            <img src="img/arrow.svg" alt="" />
-            <p
-              class="max-w-xl text-center text-lightGray md:text-left sm:text-left"
-            >
-              Kartlog offers affordable material pickup and delivery across
-              Africa
-            </p>
-          </div>
-        </div>
-        <!-- Right item -->
-        <div class="md:w-1/2">
-          <img src="img/header-1.svg" alt="header-image" />
-        </div>
-      </div>
-    </section>
-
-    <!-- Brands Section -->
-    <section id="brands"></section>
-
-    <!-- Testimonial Section -->
-    <section id="testimonials">
-      <!-- Testimonial Container -->
-      <div
-        class="max-w-8xl bg-lightAsh items-center md:flex-row px-2 mt-11 space-y-0 md:space-y-0"
-      >
-        <!-- Heading -->
-        <div class="flex-col item center space-y-0 text-left p-5">
-          <h2
-            class="text-3xl font-heading text-lightBlue font-semibold pt-16 mb-14 text-center"
-          >
-            Testimonials
-          </h2>
-
-          <!-- Testimonial Cards -->
-          <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
-            <!-- Testimonial 1 -->
+        <!-- Countdown Section -->
+        <section id="count">
             <div
-              class="flex flex-col mt-11 p-6 sm:mb-5 space-y-9 rounded-lg bg-gray-50 md:w-1/3 "
+                class="flex flex-col p-5 md:flex-row items-center text-lightGray justify-between lg:ml-5 mt-10 space-y-0 md:space-y-0"
             >
-              <h3 class="text-lg font-Headings font-bold md:text-left">
-                I wonder how i had survived without Kartlog
-              </h3>
-              <p class="text-sm font-Paragraph text-lightGray">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
-                sapiente libero consectetur explicabo molestiae modi est illum
-                quisquam.
-              </p>
-              <div class="text-left">
-                <h5 class="text-md font-TextSingle font-semibold">Sophia Moore</h5>
-                <p class="text-sm text-lightGray">CEO at Kreative Agency</p>
-                <img src="img/Mask Group-1.png" alt="" class="w-14" />
-              </div>
+                <div class="flex flex-col mb-6 space-y-6 md:w-1/2">
+                    <p
+                        class="font-heading text-center md:text-left lg:text-2xl sm:text-center sm:text-2xl"
+                    >
+                        - Coming soon
+                    </p>
+                    <h3
+                        class="font-heading text-center md:text-5xl lg:text-5xl md:text-left sm:text-4xl sm:text-center"
+                    >
+                        Get Notified <br />
+                        When we launch
+                    </h3>
+
+                    <div class="md:pr-4">
+                        <div class="form-control sm:w-20 md:w-20">
+                            <input
+                                type="text"
+                                placeholder="Enter your email address"
+                                class="md:h-10 md:w-96 sm:h-10 sm:w-80 sm:mb-1 input outline-none border border-darkBlue px-5 rounded-full"
+                            />
+                            <button
+                                type="submit"
+                                class="md:h-8 md:mt-1 md:px-8 md:left-11 md:ml-60 sm:h-10 bg-lightBlue absolute sm:left-11 sm:ml-56 items-end text-lightAsh rounded-full sm:px-5 hover:bg-darkBlue sm:items-center"
+                            >
+                                Notify me
+                            </button>
+                        </div>
+                    </div>
+
+                    <p
+                        class="font-sans text-center md:text-left md:text-md sm:text-md sm:text-center"
+                    >
+                        Don’t worry we will not spam you
+                    </p>
+                </div>
+                <div class="md:w-1/2 lg:pr-4">
+                    <div
+                        class="grid grid-flow-col gap-6 text-center auto-cols-max"
+                    >
+                        <div
+                            class="flex flex-col lg:px-5 md:p-5 bg-countPink rounded-box text-neutral-content sm:p-5"
+                        >
+                            <span class="font-heading md:text-md text-4xl">
+                                <span id="days"></span>
+                            </span>
+                            days
+                        </div>
+                        <div
+                            class="flex flex-col lg:px-5 md:p-5 bg-countPink rounded-box text-neutral-content sm:p-5"
+                        >
+                            <span class="font-heading md:text-md text-4xl">
+                                <span id="hours"></span>
+                            </span>
+                            hours
+                        </div>
+                        <div
+                            class="flex flex-col lg:px-5 md:p-5 bg-countPink rounded-box text-neutral-content sm:p-5"
+                        >
+                            <span class="font-heading md:text-md text-4xl">
+                                <span id="min"></span>
+                            </span>
+                            min
+                        </div>
+                        <div
+                            class="flex flex-col lg:px-5 md:p-5 bg-countPink rounded-box text-neutral-content sm:p-5"
+                        >
+                            <span class="font-heading md:text-md text-4xl">
+                                <span id="secs"></span>
+                            </span>
+                            sec
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hero Section -->
+        <section id="hero">
+            <!-- Flex container -->
+            <div
+                class="flex flex-col-reverse p-5 md:flex-row items-center justify-between lg:ml-5 mt-10 space-y-0 md:space-y-0"
+            >
+                <!-- Left Item -->
+                <div class="flex-col mb-22 space-y-6 md:w-1/2">
+                    <h1
+                        class="max-w-xl text-4xl font-heading text-lightGray font-bold text-center md:text-5xl md:text-left"
+                    >
+                        Everyday more people are trusting
+                        <span class="text-lightBlue">Kartlog</span> for a smooth
+                        bespoke clothing experience
+                    </h1>
+
+                    <div class="flex items-center space-x-2">
+                        <img src="img/arrow.svg" alt="" class="" />
+                        <p
+                            class="max-w-xl text-center sm:mt-5 text-lightGray md:text-left sm:text-left"
+                        >
+                            Kartlog connects to the best fashion designers in
+                            your neighborhood, you can now make orders for
+                            perfect fitted dresses with your measurement
+                        </p>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <img src="img/arrow.svg" alt="" />
+                        <p
+                            class="max-w-xl text-center sm:mt-5 text-lightGray md:text-left sm:text-left"
+                        >
+                            Kartlog has thousands of design styles to suit your
+                            every event, traditional, casual and cooperates
+                            posted by verified fashion designers
+                        </p>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <img src="img/arrow.svg" alt="" />
+                        <p
+                            class="max-w-xl text-center md:pt-0 text-lightGray md:text-left sm:text-left"
+                        >
+                            Kartlog offers affordable material pickup and
+                            delivery across Africa
+                        </p>
+                    </div>
+                </div>
+                <!-- Right item -->
+                <div class="md:w-1/2">
+                    <img src="img/header-2.svg" alt="header-image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features">
+            <!-- Flex container -->
+            <div
+                class="flex flex-col-reverse p-5 md:flex-row items-center justify-between lg:ml-5 lg:mr-5 mt-10 space-y-0 md:space-y-0"
+            >
+                <!-- Left item -->
+                <div class="flex flex-col mb-22 space-y-6 md:w-1/2">
+                    <h1
+                        class="max-w-xl text-4xl font-san text-lightGray font-bold text-center md:text-5xl md:text-left"
+                    >
+                        Fashion designers all over Africa are taking A quantum
+                        leap with
+                        <span class="text-lightBlue">Kartlog</span>
+                    </h1>
+
+                    <div class="flex items-center space-x-2">
+                        <img src="img/arrow.svg" alt="" />
+                        <p
+                            class="max-w-xl text-center sm:mt-5 text-lightGray md:text-left sm:text-left"
+                        >
+                            Kartlog connects to the best fashion designers in
+                            your neighborhood, you can now make orders for
+                            perfect fitted dresses with your measurement
+                        </p>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <img src="img/arrow.svg" alt="" />
+                        <p
+                            class="max-w-xl text-center sm:mt-5 text-lightGray md:text-left sm:text-left"
+                        >
+                            Kartlog has thousands of design styles to suit your
+                            every event, traditional, casual and cooperates
+                            posted by verified fashion designers
+                        </p>
+                    </div>
+
+                    <div class="flex items-center space-x-2">
+                        <img src="img/arrow.svg" alt="" />
+                        <p
+                            class="max-w-xl text-center text-lightGray md:text-left sm:text-left"
+                        >
+                            Kartlog offers affordable material pickup and
+                            delivery across Africa
+                        </p>
+                    </div>
+                </div>
+                <!-- Right item -->
+                <div class="md:w-1/2">
+                    <img src="img/header-1.svg" alt="header-image" />
+                </div>
+            </div>
+        </section>
+
+        <!-- Brands Section -->
+        <section id="brands"></section>
+
+        <!-- Testimonial Section -->
+        <section id="testimonials">
+            <!-- Testimonial Container -->
+            <div
+                class="max-w-8xl bg-lightAsh items-center md:flex-row px-2 mt-11 space-y-0 md:space-y-0"
+            >
+                <!-- Heading -->
+                <div class="flex-col item center space-y-0 text-left p-5">
+                    <h2
+                        class="text-3xl font-heading text-lightBlue font-semibold pt-16 mb-14 text-center"
+                    >
+                        Testimonials
+                    </h2>
+
+                    <!-- Testimonial Cards -->
+                    <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+                        <!-- Testimonial 1 -->
+                        <div
+                            class="flex flex-col mt-11 p-6 sm:mb-5 space-y-9 rounded-lg bg-gray-50 md:w-1/3"
+                        >
+                            <h3
+                                class="text-lg font-Headings font-bold md:text-left"
+                            >
+                                I wonder how i had survived without Kartlog
+                            </h3>
+                            <p class="text-sm font-Paragraph text-lightGray">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Saepe, sapiente libero
+                                consectetur explicabo molestiae modi est illum
+                                quisquam.
+                            </p>
+                            <div class="text-left">
+                                <h5
+                                    class="text-md font-TextSingle font-semibold text-darkBlue"
+                                >
+                                    Sophia Moore
+                                </h5>
+                                <p class="text-sm text-lightGray">
+                                    CEO at Kreative Agency
+                                </p>
+                                <img
+                                    src="img/Mask Group-1.png"
+                                    alt=""
+                                    class="w-14"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div
+                            class="flex-col p-6 lg:mb-8 lg:mt-0 sm:mt-11 space-y-10 rounded-lg bg-gray-50 md:flex md:w-1/3"
+                        >
+                            <h3
+                                class="text-lg font-Headings font-bold md:text-left"
+                            >
+                                Kartlog is all i need to be top of my game
+                            </h3>
+                            <p class="text-sm font-Paragraph text-lightGray">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Saepe, sapiente libero
+                                consectetur explicabo molestiae modi est illum
+                                quisquam.
+                            </p>
+                            <div class="text-left">
+                                <h5 class="text-md font-semibold text-darkBlue">
+                                    Adam Smith
+                                </h5>
+                                <p class="text-sm text-lightGray">
+                                    Fashion Designer
+                                </p>
+                                <img
+                                    src="img/Mask Group.png"
+                                    alt=""
+                                    class="w-14"
+                                />
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 3 -->
+                        <div
+                            class="flex-col p-6 mt-11 space-y-9 rounded-lg bg-gray-50 md:flex md:w-1/3"
+                        >
+                            <h3
+                                class="text-lg font-Headings font-bold md:text-left"
+                            >
+                                If you want to succeed, use Kartlog
+                            </h3>
+                            <p class="text-sm font-Paragraph text-lightGray">
+                                Lorem ipsum dolor sit, amet consectetur
+                                adipisicing elit. Saepe, sapiente libero
+                                consectetur explicabo molestiae modi est illum
+                                quisquam.
+                            </p>
+                            <div class="text-left">
+                                <h5 class="text-md font-semibold text-darkBlue">
+                                    Mike Warren
+                                </h5>
+                                <p class="text-sm font-card text-lightGray">
+                                    Designer at Drells Fashion
+                                </p>
+                                <img
+                                    src="img/Mask Group-2.png"
+                                    alt=""
+                                    class="w-14"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+
+        <!-- Flex Container -->
+        <footer class="footer p-5 bg-lightGray text-lightAsh">
+            <div>
+                <span class="footer-title">Services</span>
+                <a class="hover:text-darkBlue">Branding</a>
+                <a class="link link-hover">Design</a>
+                <a class="link link-hover">Marketing</a>
+                <a class="link link-hover">Advertisement</a>
             </div>
 
-            <!-- Testimonial 2 -->
-            <div
-              class=" flex-col p-6 lg:mb-8 lg:mt-0 sm:mt-11 space-y-10 rounded-lg bg-gray-50 md:flex md:w-1/3"
-            >
-              <h3 class="text-lg font-Headings font-bold md:text-left">
-                Kartlog is all i need to be top of my game
-              </h3>
-              <p class="text-sm font-Paragraph text-lightGray">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
-                sapiente libero consectetur explicabo molestiae modi est illum
-                quisquam.
-              </p>
-              <div class="text-left">
-                <h5 class="text-md font-semibold">Adam Smith</h5>
-                <p class="text-sm text-lightGray">Fashion Designer</p>
-                <img src="img/Mask Group.png" alt="" class="w-14" />
-              </div>
+            <div>
+                <span class="footer-title">Legal</span>
+                <a class="link link-hover">Terms of use</a>
+                <a class="link link-hover">Privacy policy</a>
+                <a class="link link-hover">Cookie policy</a>
             </div>
-
-            <!-- Testimonial 3 -->
-            <div
-              class="flex-col p-6 mt-11 space-y-9 rounded-lg bg-gray-50 md:flex md:w-1/3"
-            >
-              <h3 class="text-lg font-Headings font-bold md:text-left">
-                If you want to succeed, use Kartlog
-              </h3>
-              <p class="text-sm font-Paragraph text-lightGray">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe,
-                sapiente libero consectetur explicabo molestiae modi est illum
-                quisquam.
-              </p>
-              <div class="text-left">
-                <h5 class="text-md font-semibold">Mike Warren</h5>
-                <p class="text-sm font-card text-lightGray">Designer at Drells Fashion</p>
-                <img src="img/Mask Group-2.png" alt="" class="w-14" />
-              </div>
+            <div>
+                <span class="footer-title">Newsletter</span>
+                <div class="form-control w-80">
+                    <label class="label mb-5">
+                        <span class="label-text">Enter your email address</span>
+                    </label>
+                    <div class="relative">
+                        <input
+                            type="text"
+                            placeholder="username@site.com"
+                            class="input rounded-full w-full pr-16"
+                        />
+                        <button
+                            class="btn bg-lightBlue absolute top-0 right-0 rounded-full"
+                        >
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        </footer>
 
-    <!-- Footer -->
-    <footer class="bg-lightGray">
-      <!-- Flex Container -->
-     
-      </div>
-    </footer>
-
-    <script src="./js/count.js"></script>
-  </body>
+        <script src="./js/count.js"></script>
+    </body>
 </html>

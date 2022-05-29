@@ -840,12 +840,20 @@ html{
   top: 0px;
 }
 
-.left-6{
-  left: 1.5rem;
+.left-1{
+  left: 0.25rem;
 }
 
-.right-6{
-  right: 1.5rem;
+.right-1{
+  right: 0.25rem;
+}
+
+.right-28{
+  right: 7rem;
+}
+
+.top-28{
+  top: 7rem;
 }
 
 .right-14{
@@ -854,6 +862,14 @@ html{
 
 .right-0{
   right: 0px;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.right-20{
+  right: 5rem;
 }
 
 .z-10{
@@ -881,6 +897,14 @@ html{
   margin-right: 1.25rem;
 }
 
+.mt-2\.5{
+  margin-top: 0.625rem;
+}
+
+.mt-2{
+  margin-top: 0.5rem;
+}
+
 .mt-10{
   margin-top: 2.5rem;
 }
@@ -899,10 +923,6 @@ html{
 
 .mb-10{
   margin-bottom: 2.5rem;
-}
-
-.mt-2{
-  margin-top: 0.5rem;
 }
 
 .mb-5{
@@ -1022,6 +1042,18 @@ html{
   margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
 }
 
+.space-x-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
+}
+
 .space-y-0 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
@@ -1032,12 +1064,6 @@ html{
   --tw-space-x-reverse: 0;
   margin-right: calc(0.5rem * var(--tw-space-x-reverse));
   margin-left: calc(0.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-4 > :not([hidden]) ~ :not([hidden]){
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
 .space-x-5 > :not([hidden]) ~ :not([hidden]){
@@ -1237,6 +1263,10 @@ html{
   font-weight: 400;
 }
 
+.font-light{
+  font-weight: 300;
+}
+
 .leading-9{
   line-height: 2.25rem;
 }
@@ -1260,6 +1290,16 @@ html{
   color: rgb(23 15 73 / var(--tw-text-opacity));
 }
 
+.text-lightBlue{
+  --tw-text-opacity: 1;
+  color: rgb(7 119 161 / var(--tw-text-opacity));
+}
+
+.text-darkBlack{
+  --tw-text-opacity: 1;
+  color: rgb(33 33 33 / var(--tw-text-opacity));
+}
+
 .text-black{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1273,11 +1313,6 @@ html{
 .text-neutral-content{
   --tw-text-opacity: 1;
   color: hsl(var(--nc) / var(--tw-text-opacity));
-}
-
-.text-lightBlue{
-  --tw-text-opacity: 1;
-  color: rgb(7 119 161 / var(--tw-text-opacity));
 }
 
 .text-gray-400{
@@ -1296,19 +1331,53 @@ html{
   outline-offset: 2px;
 }
 
-.drop-shadow-md{
-  --tw-drop-shadow: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+.drop-shadow-xl{
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03)) drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+/* Hamburger Menu */
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  transition: all 0.25s;
+  position: relative;
+}
+
+.hamburger-top,
+.hamburger-bottom {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 24px;
+  height: 2px;
+  background: #000;
+  transform: rotate(0);
+  transition: all 0.5s
+}
+
+.hamburger-bottom {
+  transform: translateY(7px);
+}
+
+.open {
+  transform: rotate(90deg);
+  transform: translateY(0px);
+}
+
+.open .hamburger-top {
+  transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+.open .hamburger-bottom {
+  transform: rotate(-45deg) translateY(6px) translate(-6px);
 }
 
 .hover\:bg-darkBlue:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(23 15 73 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-blue-600:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-lightBlue:hover{
@@ -1323,34 +1392,6 @@ html{
 .hover\:text-lightBlue:hover{
   --tw-text-opacity: 1;
   color: rgb(7 119 161 / var(--tw-text-opacity));
-}
-
-.hover\:opacity-10:hover{
-  opacity: 0.1;
-}
-
-.hover\:opacity-5:hover{
-  opacity: 0.05;
-}
-
-.hover\:opacity-0:hover{
-  opacity: 0;
-}
-
-.hover\:opacity-25:hover{
-  opacity: 0.25;
-}
-
-.hover\:opacity-40:hover{
-  opacity: 0.4;
-}
-
-.hover\:opacity-50:hover{
-  opacity: 0.5;
-}
-
-.hover\:opacity-60:hover{
-  opacity: 0.6;
 }
 
 .hover\:opacity-70:hover{
@@ -1454,6 +1495,10 @@ html{
 
   .sm\:gap-3{
     gap: 0.75rem;
+  }
+
+  .sm\:self-center{
+    align-self: center;
   }
 
   .sm\:px-5{
@@ -1657,14 +1702,6 @@ html{
 
   .lg\:w-80{
     width: 20rem;
-  }
-
-  .lg\:p-8{
-    padding: 2rem;
-  }
-
-  .lg\:p-6{
-    padding: 1.5rem;
   }
 
   .lg\:p-7{
